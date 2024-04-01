@@ -1,0 +1,56 @@
+.nav{
+    // background-color: pink;
+    &__container{
+        // background: aquamarine;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 1;
+        @media only screen and (max-width: $bp-largest){
+         padding:  0 2rem;
+        }
+        @media only screen and (max-width: $bp-medium){
+            padding: 0;
+            justify-content: space-between;
+        }        
+        }
+    &__icon-flag , &__icon-man{
+        padding: 1.5rem;
+        font-size: 2.5rem;
+        color:var(--color-gray);
+        cursor: pointer;
+        @media only screen and (max-width: $bp-medium) {
+            padding: 1rem 0;
+          }  
+          @media only screen and (max-width: $bp-small) {
+            padding: 1rem .5rem;
+          } 
+    }     
+        &__icon-flag{
+            background-image: linear-gradient(to right , 
+            var(--color-blue-dark) , var(--color-blue-2));
+            -webkit-background-clip: text;
+            background-clip:text;
+            color: transparent;
+        }
+    
+        &__listbox{
+            display: flex;
+            font-size: 1.6rem;    
+            }    
+         &__link{
+            margin: 0 2rem;
+            text-decoration: none;
+            color: var(--color-gray);
+            &:hover{
+                color: var(--color-blue);
+            }
+            @media only screen and (max-width: $bp-large) {
+                margin: 0 1.5rem;
+            }
+            @media only screen and (max-width: $bp-smaller) {
+              margin: 1rem;
+              font-size: 1.4rem;
+            }       
+    }
+} 

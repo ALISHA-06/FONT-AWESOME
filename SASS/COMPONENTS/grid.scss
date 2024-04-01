@@ -1,0 +1,23 @@
+
+.row{
+    // display: flex;
+    // flex-direction: column;
+    // background-color: rgb(154, 228, 154);
+    margin: 0 9rem;
+    @media only screen and (max-width: $bp-largest){
+        margin: 0 8rem;
+    }
+    @media only screen and (max-width: $bp-large){
+        margin: 0 5rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+     margin:  0 2rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+        margin:  0 ;
+       }
+
+}
+
+
+

@@ -1,0 +1,45 @@
+:root{
+    --color-blue:#1d29db;
+    --color-blue-dark:#15035e;
+    --color-blue-2:#58adfc;
+    --color-gray:#656469;
+    --color-gray-1:#bab8bf;
+    --color-gray-light:#e2dfee;
+    --color-yellow:#fca103;
+    --color-yellow-2:#eecc0b;
+    --color-purple:#9020d1;
+    --color-purple-light:#c15efa;
+    --color-white: #fff;
+    --color-black:#000;
+}
+
+
+$bp-largest: 75em;  //1200px
+$bp-large: 62.5em;   //1000px
+$bp-medium: 50em;   //800px
+$bp-small : 37.5em;  // 600px
+$bp-smaller: 31.25em ;  //500px
+
+*,
+*::after , 
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 52.5%;
+    }
+}
+
+.section-header{
+    padding: 7rem 0;
+    @include flex;
+}
+
+.section-video{
+    background-color: rgba(gray ,.1);
+    padding: 5rem 0;
+}

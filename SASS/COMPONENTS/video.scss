@@ -1,0 +1,111 @@
+
+.Style{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 4rem;
+    justify-content: center;
+    &__card{
+        margin: 0 2rem;
+    }
+    &__card-1{
+    position: relative;
+    flex: 0 0 50%;
+    padding: 2rem;
+    border-radius: 2rem;
+    border: 2px solid var(--color-purple);
+    background-color: var(--color-white);
+    @media only screen and (max-width: $bp-largest) {
+        padding:  0 1.5rem 1.5rem 1.5rem;
+        margin: 4rem auto;
+        flex-basis: 80%;
+    }
+}
+&__link{
+    margin-right: 2rem;
+    font-size: 1.5rem;
+    border-bottom: 1px dotted;
+    text-decoration:none;
+    color: var(--color-purple-light);
+    &:hover{
+        animation: pulse 1s infinite;
+    }
+}
+&__card-2 , &__card-3{
+    flex-basis: 18%;
+    background-color: transparent;
+    border-radius: 2rem;
+    position: relative;
+    text-align: center;
+    box-shadow:  0rem .5rem 0rem 0rem var(--color-gray-1);
+    cursor: pointer;
+    transition: all .1s;
+    @media only screen and (max-width:$bp-largest) {
+        flex-basis: 35%;
+        margin:0 4rem ; 
+    }
+    @media only screen and (max-width:$bp-small) {
+        flex-basis: 37%;
+        margin:0 2rem ; 
+    }
+}
+&__card-2{
+    &:hover{
+        border:2px solid var(--color-yellow) ;
+        box-shadow:  0rem .3rem 0rem 0rem var(--color-yellow);
+    }
+}
+&__card-3{
+    &:hover{
+        border:2px solid var(--color-purple) ;
+        box-shadow:  0rem .3rem 0rem 0rem var(--color-purple);
+    }
+}
+&__img-1 , &__img-2 {
+    height: 15rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+     background-size: cover;
+    background-position: center;
+}
+&__img-1{
+    background-image: url(https://alisha-06.github.io/CSS/IMG/logo-blue.jpg);
+}
+&__img-2{
+    background-image: url(https://alisha-06.github.io/CSS/IMG/logo-purple.png);
+}
+}
+
+.Linkbox{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.Link{
+    display: flex;
+    &:link,
+    &:visited{
+        color: var(--color-blue-dark);
+        &:hover{
+            color: var(--color-blue);
+        }
+        @media only screen and (max-width:$bp-medium) {
+            margin: 0 0 1rem 8rem;
+            flex: 0 0 30%;
+        }
+        @media only screen and (max-width:$bp-small) {
+            margin: 0 0 1rem 5rem;
+        }
+    }
+    &__icon{
+        padding: 0 1rem;
+        font-size: 2rem;
+        background-color: var(--color-blue);
+        -webkit-background-clip: text;
+        background-clip:text ;
+        color: transparent;
+        @media only screen and (max-width:$bp-large) {
+            font-size: 1.4rem;
+            padding: 0 .6rem;
+        }
+    }
+}

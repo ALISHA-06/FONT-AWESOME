@@ -1,0 +1,42 @@
+body{
+    font-family:"Itim", cursive;
+    font-weight: 400;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+.heading-primary{
+    padding: 1.5rem 0;
+    font-size: 1.8rem;
+    color: var(--color-blue-dark);
+
+    &:hover{
+        animation: rotate 2s infinite;
+    }
+}
+.paragraph-primary{
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+.border-text{
+    position: absolute;
+    top:-1.3rem;
+    right: 4rem;
+    background-color: var(--color-purple-light);
+    padding: .5rem 2rem;
+    border-radius: 1rem;
+    &-2{
+        background-color: var(--color-yellow);
+    }
+    &-3{
+        background-color: var(--color-blue-2);
+    }
+}
+
+.heading-five{
+    font-size: 1.6rem;
+    font-weight: 400;
+    @media only screen and (max-width:$bp-large) {
+        font-size: 1.2rem;
+    }
+}

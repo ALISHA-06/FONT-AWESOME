@@ -1,0 +1,19 @@
+@import "ABSTRACTS/mixins.scss";
+@import "ABSTRACTS/variables.scss";
+@import "ABSTRACTS/animations.scss";
+
+@import "BASE/base.scss";
+@import "BASE/typography.scss";
+@import "BASE/utilities.scss";
+@import "BASE/links.scss";
+
+@import "COMPONENTS/btn-animated.scss";
+@import "COMPONENTS/grid.scss";
+@import "COMPONENTS/section-header.scss";
+@import "COMPONENTS/video.scss";
+@import "COMPONENTS/work";
+
+
+@import "LAYOUT/header.scss";
+@import "LAYOUT/side-navigation.scss";
+@import "LAYOUT/footer.scss";
